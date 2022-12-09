@@ -4,7 +4,7 @@
 Authors: Erin Dowdy (eedowdy2) and Hania Dziurdzik (haniakd2)
 
 ### Overview
-The program works by ranking the documents by relevance to a query using the BM25 Okapi algorithm. It then extracts the restaurant names from each document by finding the noun phrases that contain a proper noun and classifying those phrases using a Hugging Face Zero-Shot Classification model. Finally, it takes the most common restaurants from the top N most relevant documents and displays them on a map.
+The program works by ranking the documents by relevance to a query using the BM25 Okapi algorithm. It then extracts restaurant names from each document by finding the noun phrases in the document that contain a proper noun, and then classifying those phrases using a HuggingFace Zero-Shot Classification model. Finally, it takes the most common restaurants from the top N most relevant documents and displays them on a map.
 
 ### Implementation and Usage
 The program is implemented in a Python Notebook. To use the program, open the `.ipynb` file in Google Colab and run the cells. The data is located in a separate `.json` file, which needs to be uploaded to Google Drive so the notebook can access it. 
